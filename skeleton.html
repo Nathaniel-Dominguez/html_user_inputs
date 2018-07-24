@@ -1,8 +1,17 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html lang>
+<head>
+  <title>General Assembly Account Creation</title>
+</head>
+<body>
 
-General Assembly Account Creation
+<img src="general_assembly_logo.png"
 
-Welcome to the General Assembly. General Assembly is a global
+<div>
+
+<h1>General Assembly Account Creation</h1>
+
+<p>Welcome to the General Assembly. General Assembly is a global
 institution training people all over the world in today's top
 technologies.
 
@@ -10,26 +19,51 @@ Please fill out the information below to create your General Assembly
 account. Let us know what city you're in and what course
 you're taking. This list is for all students. Please tell us what
 city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+course or the Immersive Web Development course.</p>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+</div>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+<form method="" action="/success.html">
 
-Name:     _________
-Email:    _________
-Password: *********
 
-[] Yes, subscribe me to the General Assembly student newsletter
+<div>
+  <label for="city">City: </label>
+<select id="city"> 
+  <option value="">--Please choose a city--</option>
+  <option value="hongKong">Hong Kong</option>
+  <option value="london">London</option>
+  <option value="mosEisley">Mos Eisley</option>
+</select>
+</div>
 
-[Subscribe]
+<div>
+      <label>
+       Course: <input type="radio" name="Course:"
+       value="UX">
+      UX
+     </label>
+
+    <label>
+      <input type="radio" name="Course:"
+        value="Web Dev" checked>
+      Web Dev
+    </label>
+</div>
+
+<div>
+  <label for="password">Password: </label>
+    <input type="password" name="password" id="password" />
+</div>
+
+<div>
+  <input type="checkbox" name="Subscribe" id="Subscribe" value="subscribe" checked /> 
+  <label>Yes, subscribe me to the General Assembly student newsletter</label>
+</div>
+
+<div>
+  <input type="button" name="subscribe" value="subscribe" />
+</div>
+
+</form>
+</body>
+</html>
